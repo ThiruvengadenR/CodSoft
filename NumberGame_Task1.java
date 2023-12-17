@@ -7,7 +7,7 @@ import java.math.*;
 public class NumberGame_Task1 {
 	
 	private static int totalMistakesMade;
-	private static final int maximumMistakeAllowed =2;
+	private static final int maximumMistakeAllowed =4;
 	private static long start;
 	private static long end;
 
@@ -18,7 +18,7 @@ public class NumberGame_Task1 {
 		obj.set_Ending_Number_for_Range();
 		obj.swapping();
 		long randomNumber = (long) (start +(Math.random()*Math.abs(start-end)));
-		System.out.println(randomNumber);
+		//System.out.println(randomNumber);
 		long userGuess = obj.getinput(start , end);
 		obj.checkTheNumber(userGuess , randomNumber ,start ,end);
 	}

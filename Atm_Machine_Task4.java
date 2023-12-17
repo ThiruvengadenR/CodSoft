@@ -216,19 +216,6 @@ public class Atm_Machine_Task4 {
 		
 		//-----> jframe for final answer end  <------//
 		
-		//-----> Display for Empty Input <-------//
-		JFrame jframeInputRequired = new JFrame();
-		jframeInputRequired.setBounds(700, 450, 300, 200);
-		jframeInputRequired.setLayout(null);
-		
-		//JLabel 
-		JLabel jlabelForMessage = new JLabel();
-		jlabelForMessage.setBounds(50, 50, 200, 40);
-		jframeInputRequired.add(jlabelForMessage);
-		
-		jframeInputRequired.setVisible(false);
-		//-----> Display for Empty Input End  <-------//
-		
 		jbutton.addActionListener(new ActionListener() {
 			String output="";
 
@@ -456,7 +443,6 @@ public class Atm_Machine_Task4 {
 		jframeCashWithdrawal.addWindowListener(closing);
 		jframeCashDeposit.addWindowListener(closing);
 		jframeFinalAnswer.addWindowListener(closing);
-		jframeInputRequired.addWindowListener(closing);
 	}
 	
 	public static void main(String[] args) {
